@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 
 @Entity
 @DynamicUpdate
-// @DynamicInsert
+@DynamicInsert
 public class Author {
 
     @Id
@@ -56,4 +56,12 @@ public class Author {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

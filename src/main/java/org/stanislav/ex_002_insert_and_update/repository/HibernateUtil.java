@@ -1,4 +1,4 @@
-package org.stanislav.ex_002_insert_and_update;
+package org.stanislav.ex_002_insert_and_update.repository;
 
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
