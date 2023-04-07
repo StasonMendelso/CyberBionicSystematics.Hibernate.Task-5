@@ -15,6 +15,18 @@ public class Book {
     private String name;
     private long author_id;
 
+    public Book(String name, long author_id) {
+        this.name = name;
+        this.author_id = author_id;
+    }
+
+    public Book(String name) {
+        this.name = name;
+    }
+
+    public Book() {
+    }
+
     public long getId() {
         return id;
     }
@@ -39,4 +51,12 @@ public class Book {
         this.author_id = author_id;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author_id=" + author_id +
+                '}';
+    }
 }

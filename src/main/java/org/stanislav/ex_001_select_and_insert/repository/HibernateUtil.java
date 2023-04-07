@@ -1,4 +1,4 @@
-package org.stanislav.ex_002_insert_and_update;
+package org.stanislav.ex_001_select_and_insert.repository;
 
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
@@ -16,7 +16,7 @@ public class HibernateUtil {
     static {
         try {
             factory = new Configuration()
-                    .configure("ex_002_config.xml")
+                    .configure("ex_001_config.xml")
                     .buildSessionFactory();
         } catch (HibernateException e) {
             LOG.error(e);
