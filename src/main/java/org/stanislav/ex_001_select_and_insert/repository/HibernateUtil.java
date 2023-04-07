@@ -1,4 +1,4 @@
-package org.stanislav.ex_001_select_and_insert;
+package org.stanislav.ex_001_select_and_insert.repository;
 
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
